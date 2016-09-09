@@ -19,7 +19,7 @@ export default class Table extends Component {
     const { data } = nextProps
     const columns = this.extractColumns(data)
     const nextState = { columns }
-    if (!columns.includes(this.state.column)) {
+    if (!columns.includes(this.state.sorting.column)) {
       nextState.sorting = this.getDefaultSorting(columns)
     }
     this.setState(nextState)
