@@ -4,8 +4,8 @@ const DATA1 = [
 ]
 
 const DATA2 = [
-  { age: 20, manufacturer: 'Ford', model: 'Focus' },
-  { age: 10, manufacturer: 'Ford', model: 'Mustang' }
+  { age: 1, name: 'Joe' },
+  { age: 2, name: 'Jane' }
 ]
 
 const DATA3 = [
@@ -15,7 +15,7 @@ const DATA3 = [
 ]
 
 export default [
-  { name: 'People', model: DATA1 },
-  { name: 'Cars', model: DATA2 },
+  { name: 'People-1', model: DATA1 },
+  { name: 'People-2', model: DATA2 },
   { name: 'Dots', model: DATA3 },
 ]
