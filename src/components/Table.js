@@ -13,19 +13,18 @@
   To achieve this we will create two helper components:
     * TableHead
     * TableBody
-  The first one will render the header with sorting capabilities
+  The first one will render the header with sorting capabilities.
   The second one will simply render the data that's passed to it.
-  These two components will be "dumb" and won't containe any logic.
+  These two components will be "dumb" and won't contain any logic.
   Our current component will be the "smart" orchestrator.
   It should be clear by now that the entire tree depends on 3 things:
     * the original data
     * the column to sort by
     * the sorting direction
-  The first of them is a props of the component.
-  The rest two could live in its state because in the current application
+  The first of them is a prop(erty) of the component.
+  The remaining two could live in its state because in the current application
   there's nobody outside of this component who cares about how it handles sorting
-  and what is the current sort configuration (but it can be different
-  in other applications).
+  and what is the current sorting state (but it can be different in other applications).
 
   Enough of theory, let's check how it's done.
 */
