@@ -180,8 +180,8 @@ class App extends Component {
         And it renders the table with the _current collection_.
         This description gives us an idea of what data this `App` component
         should have access to:
-          * the components list (we used a module-global DATA variable for that)
-          * the currently selected model (we use the component state to store the index in it)
+          * the data models list (we used a module-global DATA variable for that)
+          * the currently selected model (we use the component state to store the index of it)
         Now we also realize that the buttons block should be able to modify the index in the state.
         Let's go and check the `.renderButtons` method.
       */}
