@@ -1,14 +1,48 @@
 <!doctype html>
 <html lang="en">
+  <!-- This is a pretty boring almost empty HTML file -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+      Notice how we specify the path to the favicon here.
+      create-react-app (CRApp) will take care of it
+      both in development and when building the
+      production-ready version of the app.
+      If you're not using CRApp you'll need to setup the assets handling yourself.
+    -->
     <link rel="shortcut icon" href="./src/favicon.ico">
     <title>React App</title>
 
+    <!--
+      As it's _just HTML_ I can do whatever I want with it.
+      Here I've added the Bootstrap stylesheet from the CDN.
+    -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--
+      You may notice that this file doesn't contain any reference to our custom CSS.
+      We'll see how the CSS gets into the business.
+      If you're curious it's being handled by
+      `extract-text-webpack-plugin` https://github.com/webpack/extract-text-webpack-plugin
+      and then injected here by
+      `html-webpack-plugin` https://github.com/ampedandwired/html-webpack-plugin
+    -->
   </head>
   <body>
+    <!--
+      This element will server as a container for the entire React app.
+      We'll see soon how it works.
+      We give it an ID for fast JS lookup,
+      and a class for styling.
+    -->
     <div id="root" class="root"></div>
+
+    <!--
+      As you can see we don't include any custom JS here as well.
+      JS is handled in the same way as CSS, thanks to `html-webpack-plugin`.
+      CRApp has configured it to get started with `src/index.js`.
+      Let's jump there to continue our reading.
+    -->
   </body>
 </html>
