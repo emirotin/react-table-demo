@@ -25,10 +25,10 @@ import ReactDOM from 'react-dom'
 
 // By convention we call the main component for the entrire application `App`
 // We'll jump there soon, but for now we should know that
-// the modules defines the root component.
+// the module defines the root component.
 import App from './App'
 
-// Wait, what's that? Importing the CSS as a JS module?
+// Wait, what's that? Importing CSS as a JS module?
 // That's fine. The `extract-text-webpack-plugin` is configured
 // to understand them and collect for a separate output in the `webpack` bundle.
 // In development such files will be injected as `<style>` tags.
