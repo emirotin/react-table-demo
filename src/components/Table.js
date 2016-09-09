@@ -10,7 +10,6 @@ export default class Table extends Component {
 
     const columns = this.extractColumns(props.data)
     this.state = {
-      columns,
       sorting: this.getDefaultSorting(columns)
     }
   }
@@ -18,11 +17,10 @@ export default class Table extends Component {
   componentWillReceiveProps(nextProps) {
     const { data } = nextProps
     const columns = this.extractColumns(data)
-    const nextState = { columns }
     if (!columns.includes(this.state.sorting.column)) {
-      nextState.sorting = this.getDefaultSorting(columns)
+      const sorting = this.getDefaultSorting(columns)
+      this.setState({ sorting })
     }
-    this.setState(nextState)
   }
 
   extractColumns(data) {
@@ -53,8 +51,10 @@ export default class Table extends Component {
   }
 
   render() {
+    const columns = this.extractColumns(this.props.data)
+    const { sorting } = this.state
     const data = this.getSortedData()
-    const { columns, sorting } = this.state
+
     return <table className="table">
       <TableHead columns={columns} sorting={sorting} setSorting={this.setSorting} />
       <TableBody data={data} columns={columns} />
