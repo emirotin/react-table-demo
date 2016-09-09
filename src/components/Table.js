@@ -67,7 +67,7 @@ export default class Table extends Component {
     // Note that we could store the `columns` beceause we will need them later,
     // but such behavior is discouraged.
     // The idea is that you should never attach to the component somehting
-    // that can be dereived from the state and props.
+    // that can be derived from the state and/or props.
   }
 
   // Now this is something interesting.
