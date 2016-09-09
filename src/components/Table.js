@@ -1,6 +1,6 @@
 /*
   So, this is the Table component.
-  Before diving into it ;et's make a bit of planning.
+  Before diving into it let's make a bit of planning.
   What are we trying to achieve?
     * We need a component to render the data
     * The data will be passed in as a property
