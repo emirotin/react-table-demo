@@ -33,7 +33,7 @@
 import React, { Component } from 'react'
 
 // Note how I only import a single methods form the big `lodash` library.
-// Some day in the future this will allow use to get benefit of
+// Some day in the future this will allow us to get benefit of
 // _tree shaking_: http://www.2ality.com/2015/12/webpack-tree-shaking.html
 import { orderBy } from 'lodash'
 
