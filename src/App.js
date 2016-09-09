@@ -130,7 +130,7 @@ class App extends Component {
     </div>
   }
 
-  // ... Right here.
+  // >>> Right here.
   // It's a special (and the only required) method of the `Component`.
   // It _projects_ the properties and state into the _virtual DOM_.
   // Let's see:

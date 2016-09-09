@@ -1,20 +1,30 @@
-import React, { Component } from 'react'
+// Well, this component is even simpler.
+// It gets the sorted data and the column (property names)
+// and renders a row for each data in the list,
+// with a cell for each column name.
+// Hopefully it doesn't need any code annotations.
 
-export default class TableBody extends Component {
-  renderCell = data => cellName => {
-    return <td key={cellName}>{data[cellName]}</td>
-  }
+import React from 'react'
 
-  renderRow = (data, key) => {
-    const renderCell = this.renderCell(data)
-    return <tr key={key}>
-      {this.props.columns.map(renderCell)}
-    </tr>
-  }
-
-  render() {
-    return <tbody>
-      {this.props.data.map(this.renderRow)}
-    </tbody>
-  }
+const renderCell = data => cellName => {
+  return <td key={cellName}>{data[cellName]}</td>
 }
+
+const renderRow = columns => (data, index) => {
+  const _renderCell = renderCell(data)
+  return <tr key={index}>
+    {columns.map(_renderCell)}
+  </tr>
+}
+
+const TableBody = props => {
+  const { data, columns } = props
+  const _renderRow = renderRow(columns)
+  return <tbody>
+    {data.map(_renderRow)}
+  </tbody>
+}
+
+export default TableBody
+
+// And now we're done!
