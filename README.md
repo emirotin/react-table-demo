@@ -2,7 +2,7 @@ This is a simple project intended to demonstrate some React practices, together 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-Check the [demo](https://ns-gwroassptn.now.sh/) first.
+Check the [live demo](https://ns-gwroassptn.now.sh/) first.
 
 Now read the source as a blog post.
 Get started by visiting the `index.html`.
