@@ -59,9 +59,9 @@ const TableHead = props => {
 
   // As before I have a separate method to render the column.
   // But it also needs some info other than the column name.
-  // Namely, the current staye of the sorting, and the
+  // Namely, the current state of the sorting, and the
   // callback to change it.
-  // But we no longer have a class instance to share the props across the mehtods.
+  // But we no longer have a class instance to share the props across the methods.
 
   // Let's jump higher and check how this function is defined.
   const _renderColumn = renderColumn(sorting, setSorting)
