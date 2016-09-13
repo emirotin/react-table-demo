@@ -42,13 +42,13 @@ class App extends Component {
   // You should only assign to it once (like here, or inside of the constructor).
   // And then you should update it with `.setState` method.
   // We'll see it soon.
-  // For now it's obvious that we're going to keep a single `index` proprty
+  // For now it's obvious that we're going to keep a single `index` property
   // in our state.
   state = {
     index: 0
   }
 
-  // OK this is bviously a method that changes the index.
+  // OK this is obviously a method that changes the index.
   // There's something interesting here, too.
   // First, it's an instance property again.
   // Second, it's a fat arrow function that's a cool thing
@@ -159,7 +159,7 @@ class App extends Component {
     // We _must_ return a single element from the render method.
     // So we have a DIV wrapper here.
     // Not that we use `className` attribute instead of `class` in HTML.
-    // React follows the DOM API spec which differes
+    // React follows the DOM API spec which differs
     // from attributes naming a bit.
     // For example, you have to use `className` and `htmlFor`.
     // https://facebook.github.io/react/docs/tags-and-attributes.html#supported-attributes

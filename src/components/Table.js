@@ -101,8 +101,8 @@ export default class Table extends Component {
     }
   }
 
-  // This method is a bit more interested.
-  // Sorted data is somethign that again can be calculated using the
+  // This method is a bit more interesting.
+  // Sorted data is something that again can be calculated using the
   // props and the state of the sorting.
   // It makes sense to keep this logic in the smart component,
   // or in a separate service (if the computations involve more business logic).
@@ -120,7 +120,7 @@ export default class Table extends Component {
   }
 
   // Now we have an interesting question.
-  // Our header component is dubm.
+  // Our header component is dumb.
   // And React data flow is uni-directional.
   // How would the child _change_ the parent's data?
   // The answer is the child should be passed a callback,
